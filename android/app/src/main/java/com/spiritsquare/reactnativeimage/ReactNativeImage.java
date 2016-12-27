@@ -38,4 +38,9 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
     public ReactImageView createViewInstance(ThemedReactContext context) {
         return new ReactImageView(context, Fresco.newDraweeControllerBuilder(), mCallerContext);
     }
+
+    @ReactProp(name = "src")
+    public void setSrc(ReactImageView view, @Nullable String src) {
+        view.setSource(src);
+    }
 }
