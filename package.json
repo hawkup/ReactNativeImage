@@ -8,10 +8,7 @@
   },
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "react-native": "^0.39.2"
-  },
   "dependencies": {
-    "react-native": "github:facebook/react-native#master"
+    "react-native": "^0.39.2"
   }
 }
