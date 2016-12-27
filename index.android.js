@@ -13,4 +13,4 @@ var iface = {
   },
 };
 
-module.exports = requireNativeComponent('RCTImageView', iface);
+module.exports = requireNativeComponent('ReactNativeImage', iface);

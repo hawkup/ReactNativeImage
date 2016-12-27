@@ -21,7 +21,7 @@ import java.util.List;
  */
 
 public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
-    public static final String REACT_CLASS = "RCTImageView";
+    public static final String REACT_CLASS = "ReactNativeImage";
 
     @Override
     public String getName() {
