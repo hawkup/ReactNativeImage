@@ -36,7 +36,8 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
     // In JS this is Image.props.source
     @ReactProp(name = "src")
     public void setSource(ReactImageView view, @Nullable ReadableArray sources) {
-       view.setSource(sources);
+        System.out.println(sources);
+//       view.setSource(sources);
     }
 
     @ReactProp(name = "borderRadius", defaultFloat = 0f)
