@@ -6,6 +6,7 @@ import { requireNativeComponent, View } from 'react-native';
 var iface = {
   name: 'ReactNativeImage',
   propTypes: {
+    src: PropTypes.string,
     borderRadius: PropTypes.number,
     ...View.propTypes,
   },

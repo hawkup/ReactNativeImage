@@ -39,6 +39,11 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
         return new ReactImageView(context, Fresco.newDraweeControllerBuilder(), mCallerContext);
     }
 
+    @ReactProp(name = "src")
+    public void setSrc(ReactImageView view, @Nullable String src) {
+        view.setSource(src);
+    }
+
     @ReactProp(name = "borderRadius", defaultFloat = 0f)
     public void setBorderRadius(ReactImageView view, float borderRadius) {
         view.setBorderRadius(borderRadius);
