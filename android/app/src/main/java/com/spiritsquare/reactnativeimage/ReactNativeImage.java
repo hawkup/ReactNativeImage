@@ -42,6 +42,7 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
 
     @ReactProp(name = "borderRadius", defaultFloat = 0f)
     public void setBorderRadius(ReactImageView view, float borderRadius) {
+        System.out.println(borderRadius);
         view.setBorderRadius(borderRadius);
     }
 }
