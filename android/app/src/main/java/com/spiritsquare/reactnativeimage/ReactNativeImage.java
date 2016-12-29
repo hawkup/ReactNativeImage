@@ -2,6 +2,7 @@ package com.spiritsquare.reactnativeimage;
 
 
 import android.support.annotation.Nullable;
+import android.util.Log;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.react.bridge.ReadableArray;
@@ -22,6 +23,8 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
         return REACT_CLASS;
     }
 
+    public static final String TAG = ReactNativeImage.class.getSimpleName();
+
     private final @Nullable Object mCallerContext;
 
     public ReactNativeImage() {
@@ -36,13 +39,13 @@ public class ReactNativeImage extends SimpleViewManager<ReactImageView> {
     // In JS this is Image.props.source
     @ReactProp(name = "src")
     public void setSource(ReactImageView view, @Nullable ReadableArray sources) {
-        System.out.println(sources);
 //       view.setSource(sources);
+        Log.i(TAG, sources.toString());
     }
 
     @ReactProp(name = "borderRadius", defaultFloat = 0f)
     public void setBorderRadius(ReactImageView view, float borderRadius) {
-        System.out.println(borderRadius);
+        Log.i(TAG, "borderRadius");
         view.setBorderRadius(borderRadius);
     }
 }
