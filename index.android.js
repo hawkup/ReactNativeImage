@@ -7,7 +7,7 @@ var iface = {
   name: 'ReactNativeImage',
   propTypes: {
     ...View.propTypes,
-    src: PropTypes.any,
+    src: PropTypes.string,
     borderRadius: PropTypes.number,
   },
 };
